@@ -1,0 +1,133 @@
+{% extends 'layouts/layout-bsa-design-system.html' %}
+
+{% block pageTitle %}
+Start page template - NHS.UK prototype kit
+{% endblock %}
+
+{% block beforeContent %}
+
+<!--
+{{ breadcrumb({
+  items: [
+    {
+      href: "/diat/design-system-home",
+      text: "Design System"
+    }
+  ],
+      href: "/diat/community/community",
+      text: "Resources"
+}) }}
+-->
+
+
+{% endblock %}
+
+{% block content %}
+
+
+<div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-one-third">
+        <div class="article-section-nav-outer-wrapper">
+            <div id="sticky-nav" class="" style="">
+                <div class="inner-wrapper-sticky" style="position: relative; transform: translate3d(0px, 0px, 0px);">
+                    <div class="article-section-nav-wrapper">
+                        <div class="article-section-nav">
+                            <nav id="toc" class="js-toc-list toc__list">
+                                <ol class="article-section-nav__list">
+                                    <li>
+                                        <a href="accessibility" class="active">Accessibility</a>
+                                    </li>
+                                    <li>
+                                        <a href="nhsuk">NHS.UK</a>
+                                    </li>
+                                    <li>
+                                        <a href="gov">GOV.UK</a>
+                                    </li>
+                                    <li>
+                                        <a href="prototyping">Prototyping</a>
+                                    </li>
+                                    <li>
+                                        <a href="templates">Templates</a>
+                                    </li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="nhsuk-grid-column-two-thirds">
+       
+        <span class="nhsuk-caption-xl">Resources</span>
+        <h1 class="nhsuk-heading-xl">Accessibility </h1>
+
+        <p class="nhsuk-body-l">Help your service meet it's accessibility requirements. </p>
+        <p>If your service isn't accessible it doesn't meet NHSBSA standards.</p>
+
+
+
+        <h2>GOV.UK accessibility guidance</h2>
+        <ul>
+            <li>
+                <a href="https://www.gov.uk/service-manual/helping-people-to-use-your-service">Helping people to use your service</a>
+            </li>
+            <li>
+                <a href="https://www.gov.uk/service-manual/technology/testing-for-accessibility">Testing for accessibility</a>
+            </li>
+            <li>
+                <a href="https://gds.blog.gov.uk/2018/06/20/creating-the-uk-governments-accessibility-empathy-lab/">
+                    Using the empathy lab at GDS
+                </a>
+            </li>
+            <li>
+                <a href="https://www.gov.uk/government/publications/understanding-disabilities-and-impairments-user-profiles" target="_blank">
+                    User profiles for understanding disabilities and impairments
+                </a>
+            </li>
+        </ul>
+
+        <h2>Other tools</h2>
+        <ul>
+            <li>
+                <a href="https://ukhomeoffice.github.io/accessibility-posters/" target="_blank">
+                    Do's and don'ts for designing accessible services
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/UKHomeOffice/posters/tree/master/accessibility" target="_blank">
+                    Access needs poster set
+                </a>
+            </li>
+            <li>
+                <a href="http://webaim.org/resources/contrastchecker/" target="_blank">
+                    Colour contrast checker
+                </a>
+            </li>
+            <li>
+                <a href="https://help.apple.com/voiceover/info/guide/10.12/" target="_blank">
+                    Guide for VoiceOver screenreader
+                </a>
+            </li>
+            <li>
+                <a href="http://wave.webaim.org/" target="_blank">
+                    WAVE accessibility evaluation tool
+                </a>
+            </li>
+        </ul>
+
+    </div>
+    <!--
+        /**
+         * sticky-sidebar - A JavaScript plugin for making smart and high performance.
+         * @version v3.3.1
+         * @link https://github.com/abouolia/sticky-sidebar
+         * @author Ahmed Bouhuolia
+         * @license The MIT License (MIT)
+         **/
+-->
+
+
+</div>
+{% endblock %}

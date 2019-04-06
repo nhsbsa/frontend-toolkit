@@ -8,17 +8,10 @@ Start page template - NHS.UK prototype kit
 
 <!--
 {{ breadcrumb({
-  items: [
-    {
       href: "/diat/design-system-home",
       text: "Design System"
-    }
-  ],
-      href: "/diat/community/community",
-      text: "Community"
-}) }}
+  }) }}
 -->
-
 
 {% endblock %}
 
@@ -35,13 +28,19 @@ Start page template - NHS.UK prototype kit
                             <nav id="toc" class="js-toc-list toc__list">
                                 <ol class="article-section-nav__list">
                                     <li>
-                                        <a href="backlog" class="active">Backlog</a>
+                                        <a href="accessibility">Accessibility</a>
                                     </li>
                                     <li>
-                                        <a href="contribute">Contribute</a>
+                                        <a href="nhsuk" class="active">NHS.UK</a>
                                     </li>
                                     <li>
-                                        <a href="using-patterns">Using the system</a>
+                                        <a href="gov" >GOV.UK</a>
+                                    </li>
+                                    <li>
+                                        <a href="prototyping">Prototyping</a>
+                                    </li>
+                                    <li>
+                                        <a href="templates">Templates</a>
                                     </li>
                                 </ol>
                             </nav>
@@ -53,20 +52,36 @@ Start page template - NHS.UK prototype kit
     </div>
 
     <div class="nhsuk-grid-column-two-thirds">
-        <span class="nhsuk-caption-xl">Community</span>
-        <h1 class="nhsuk-heading-xl">Backlog</h1>
+        <span class="nhsuk-caption-xl">Resources</span>
+        <h1 class="nhsuk-heading-xl">Guidance on NHS.UK</h1>
 
-
-        <p>The Design System has an open backlog on <a href="#">GitHub</a>. Anyone can propose, develop or contribute to new patterns and components, or improvements to existing ones.</p>
-<!--        https://github.com/UKHomeOffice/home-office-digital-patterns/projects/1-->
-
-        <p>To contribute, you can create and comment on an <a href="#">issue in GitHub</a>.</p>
-<!--        https://github.com/UKHomeOffice/home-office-digital-patterns/issues-->
-
-        <p>The best place to discuss patterns and components is on Slack.</p>
+        <p>Resources available across the NHS.</p>
+        <ul class="resource-list">
+            <li>
+                <a href="https://beta.nhs.uk/service-manual/styles-components-patterns">
+                    NHS.UK design system
+                </a>
+            </li>
+            <li>
+                <a href="https://beta.nhs.uk/service-manual/design-principles">
+                    NHS.UK design principles
+                </a>
+            </li>
+            <li>
+                <a href="https://beta.nhs.uk/service-manual/content">
+                    NHS.UK content style guide
+                </a>
+            </li>
+            <li>
+                <a href="https://beta.nhs.uk/service-manual/">
+                    NHS.UK service manual
+                </a>
+            </li>
+        </ul>
     </div>
 
-    <!--
+</div>
+<!--
         /**
          * sticky-sidebar - A JavaScript plugin for making smart and high performance.
          * @version v3.3.1

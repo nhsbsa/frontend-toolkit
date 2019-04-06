@@ -6,6 +6,7 @@ Start page template - NHS.UK prototype kit
 
 {% block beforeContent %}
 
+<!--
 {{ breadcrumb({
   items: [
     {
@@ -16,6 +17,7 @@ Start page template - NHS.UK prototype kit
       href: "/diat/community/community",
       text: "Community"
 }) }}
+-->
 
 
 {% endblock %}
@@ -51,7 +53,8 @@ Start page template - NHS.UK prototype kit
     </div>
 
     <div class="nhsuk-grid-column-two-thirds">
-        <h1>Contribute</h1>
+        <span class="nhsuk-caption-xl">Community</span>
+        <h1 class="nhsuk-heading-xl">Contribute</h1>
 
         <p class="nhsuk-body-l">Anyone can propose a new component or pattern.</p>
 

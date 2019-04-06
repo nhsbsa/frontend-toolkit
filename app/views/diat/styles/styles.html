@@ -7,18 +7,11 @@ Start page template - NHS.UK prototype kit
 {% block beforeContent %}
 
 <!--
-{{ breadcrumb({
-  items: [
-    {
+  {{ breadcrumb({
       href: "/diat/design-system-home",
       text: "Design System"
-    }
-  ],
-      href: "/diat/community/community",
-      text: "Community"
-}) }}
+  }) }}
 -->
-
 
 {% endblock %}
 
@@ -35,13 +28,13 @@ Start page template - NHS.UK prototype kit
                             <nav id="toc" class="js-toc-list toc__list">
                                 <ol class="article-section-nav__list">
                                     <li>
-                                        <a href="backlog" class="active">Backlog</a>
+                                        <a href="1">1</a>
                                     </li>
                                     <li>
-                                        <a href="contribute">Contribute</a>
+                                        <a href="2">2</a>
                                     </li>
                                     <li>
-                                        <a href="using-patterns">Using the system</a>
+                                        <a href="3">3</a>
                                     </li>
                                 </ol>
                             </nav>
@@ -53,17 +46,28 @@ Start page template - NHS.UK prototype kit
     </div>
 
     <div class="nhsuk-grid-column-two-thirds">
-        <span class="nhsuk-caption-xl">Community</span>
-        <h1 class="nhsuk-heading-xl">Backlog</h1>
+        <h1>Styles</h1>
 
+      <p>Digital services for government staff users in the NHSBSA (new services and existing digital services that are being redeveloped) should use these styles.</p>
+      <p>In the NHSBSA this includes:</p>
+      <ul class="list list-bullet">
+        <li>caseworking systems</li>
+        <li>microsites</li>
+        <li>intranets</li>
+      </ul>
+      <p>The styles are available in a <a href="https://github.com/UKHomeOffice/ho-style-prototype-kit">NHSBSA version of the prototype kit</a>.</p>
 
-        <p>The Design System has an open backlog on <a href="#">GitHub</a>. Anyone can propose, develop or contribute to new patterns and components, or improvements to existing ones.</p>
-<!--        https://github.com/UKHomeOffice/home-office-digital-patterns/projects/1-->
+      <h2>Why we created these styles</h2>
+      <p>If your service is not on a gov.uk or service.gov.uk domain, you cannot use the GOV.UK crown logo (Service Manual, <a href="https://www.gov.uk/service-manual/design/services-for-government-users">Services for government users</a>) or the <a href="https://designnotes.blog.gov.uk/2015/03/11/can-i-use-the-gov-uk-fonts/">GDS Transport font</a>.</p>
+      
+      <p>Most NHSBSA services for NHS staff users fall within these restrictions. For those services, these styles replace the GOV.UK styling.</p>
+      
+      <p>This guidance applies to digital services, and does not affect or change any of the NHSBSA's existing brand advice for print and offline applications.</p>
+      
+       <p>Read a blog post about <a href="#0">why we created seperate styling for services for government users</a>.</p> 
 
-        <p>To contribute, you can create and comment on an <a href="#">issue in GitHub</a>.</p>
-<!--        https://github.com/UKHomeOffice/home-office-digital-patterns/issues-->
+    </div>
 
-        <p>The best place to discuss patterns and components is on Slack.</p>
     </div>
 
     <!--

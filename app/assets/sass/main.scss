@@ -27,6 +27,7 @@
 //
 //}
 
+
     /* Sticky nav */
     #sticky-nav a.active {
         border-left: 7px solid #ffb81c;
@@ -340,4 +341,13 @@
     .callout--attention {
         border: 8px solid #005EB8;
     }
+
+
+    .nhsuk-caption-xl {
+    font-size: 27px;
+    display: block;
+    color: $color_nhsuk-grey-2;
+  }
+
+
 
