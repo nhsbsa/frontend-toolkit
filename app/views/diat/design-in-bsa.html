@@ -1,0 +1,210 @@
+{% extends 'layouts/layout.html' %}
+
+{% block pageTitle %}
+About - NHS.UK prototype kit
+{% endblock %}
+
+{% block beforeContent %}
+
+{{ breadcrumb({
+  items: [
+    {
+      href: "/diat/home",
+      text: "Home"
+    },
+    {
+      href: "/diat/guidance",
+      text: "Guidance and tools"
+    }
+  ],
+      href: "/diat/content-books",
+      text: "Recommended reading"
+}) }}
+{% endblock %}
+
+
+{% block content %}
+
+
+<div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-full">
+        <h1>Starting as a designer in the NHSBSA </h1>
+    </div>
+</div>
+
+<div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-one-third">
+  <p class="bold">Page contents:</p>
+
+  <ol class="list list-bullet pattern_nav">
+    <li><a href="#1">what you're part of</a></li>
+    <li><a href="#2">how we do stuff</a></li>
+    <li><a href="#3">prototyping</a></li>
+    <li><a href="#4">design training</a></li>
+    <li><a href="#5">get involved</a></li>
+    <li><a href="#6">go to design meet ups</a></li>
+    <li><a href="#7">useful links</a></li>
+  </ol>
+    </div>
+</div>
+
+
+<div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-three-quarters">
+    
+
+  <h3 class="heading-medium" id="1" style="margin-top: 0px;">What you're part of</h3>
+
+  <p>There are over 300 designers in government. All the designers are part of a design community.</p>
+
+  <p>The design community supports everyone who's designing public services to make them usable, accessible and consistent for users.</p>
+
+  <p>10 heads of design in departments across government and GDS's design team lead the community.</p>
+
+  <p><a href="https://www.gov.uk/service-manual/user-centred-design/index.html">Design community page</a></p>
+
+  <hr>
+
+  <h3 class="heading-medium" id="2">How we do things</h3>
+
+  <p>Design in government is user-centred. This means that every design decision should be based on user needs, and those user needs should all come from <a href="https://www.gov.uk/service-manual/communities/user-research-community">user research</a>.</p>
+
+  <p>Designers should follow these <a href="https://www.gov.uk/design-principles">10 design principles</a>.</p>
+
+  <hr>
+
+  <h3 class="heading-medium" id="3">Prototyping</h3>
+
+  <p><a href="https://github.com/alphagov/govuk_prototype_kit">GOV.UK prototype kit</a> provides a simple way to make interactive prototypes that look like pages on GOV.UK.</p> 
+
+  <p>Use prototypes to show ideas to anyone you work with, and test those ideas with users.</p>
+
+
+  <p>Use our tested <a href="https://www.gov.uk/service-manual/user-centred-design/resources/patterns">patterns</a> when you're building your service, for example, addresses in forms or how to ask users about gender and sex.</p> 
+
+  <p>Reusing these patterns will save you time and effort, for example when you're working on problems which someone has already solved.</p>
+
+  <hr>
+
+  <h3 class="heading-medium" id="4">Design training</h3>
+
+  <p>GDS provide training for designers in government. You can get 3 days of training - sessions are held every 6 weeks at GDS in London.</p>
+
+  <p>Training includes talks, introductions and practical skills.</p>
+
+  <p>Talks:</p>
+
+  <ul class="list list-bullet">
+    <li>the role of design in government</li>
+    <li>designing in an agile team</li>
+    <li>case studies</li>
+  </ul>
+
+  <p>Introductions to:</p>
+
+  <ul class="list list-bullet">
+    <li>user research</li>
+    <li>service design</li>
+    <li>interaction design</li> 
+    <li>graphic design</li>
+    <li>content design</li>
+    <li>accessibility</li>
+  </ul>
+  
+  <p>Practical skills:</p>
+
+  <ul class="list list-bullet">
+    <li>prototyping</li>
+    <li>journey mapping</li>
+    <li>design crits</li>
+  </ul>
+
+  <p>The third day is dedicated to HTML prototyping - you'll learn how to use the GOV.UK Prototyping Kit.</p>
+
+  <p>Find out more about the training, email olivia.steatham@digital.cabinet-office.gov.uk</p>
+
+  <hr>
+
+  <h3 class="heading-medium" id="5">Get involved</h3>
+
+  <p>Use any of the following to get advice, discuss work or share ideas:</p>
+
+  <ul class="list list-bullet">
+    <li><a href="digital-service-designers@digital.cabinet-office.gov.uk">design mailing list</a></li>
+    <li><a href="https://ukgovernmentdigital.slack.com/messages/design/">design Slack channel</a></li>
+    <li><a href="https://designpatterns.hackpad.com/">design pattern wiki</a></li>
+    <li><a href="gds-designers@digital.cabinet-office.gov.uk">arrange a design crit</a></li>
+  </ul>
+
+  <!-- added stuff from Home Office feedback -->
+  <p>Department will have their own slack channels and self-organised communities. Speak to your head of design to find out more.</p>
+
+  <hr>
+
+  <h3 class="heading-medium" id="6">Go to design meet ups</h3>
+
+  <p>You should go to the designers in government meet ups. These happen every 8 weeks in different cities across the UK.</p> 
+
+  <p>You can get all of the following from design meet ups:</p> 
+
+  <ul class="list list-bullet">
+    <li>updates from heads of design and GDS</li>
+    <li>show and tells from service teams</li>
+    <li>guest speakers from outside government</li>
+    <li>time to hang out with other designers</li>
+  </ul>
+
+  <p>The next meeting is on <span class="bold">6 September 2016</span> in <span class="bold">Leeds</span>.</p> 
+
+  <p><a href="#">Register to attend</a>.</p>
+
+
+
+    <div class="nhsuk-panel-with-label">
+        <h3 class="nhsuk-panel-with-label__label">Useful Resources</h3>
+
+        <ul>    
+            <li><a href="https://www.gov.uk/design-principles">design principles</a></li>
+            <li><a href="https://github.com/alphagov/govuk_prototype_kit">GOV.UK prototype kit</a></li>
+            <li><a href="http://govuk-elements.herokuapp.com/">GOV.UK elements</a></li>
+            <li><a href="https://www.gov.uk/service-manual/user-centred-design/resources/patterns">patterns</a></li>
+            <li><a href="https://www.gov.uk/service-manual">Service Manual</a></li>
+            <li><a href="https://www.gov.uk/service-manual/service-standard">Service Standard</a></li>
+        </ul>
+
+    </div>
+        
+
+  <hr>
+  
+      <div class="nhsuk-panel-with-label">
+        <h3 class="nhsuk-panel-with-label__label">Useful Blogs and Blogposts</h3>
+
+        <ul>    
+            <li><a href="https://designnotes.blog.gov.uk/">GDS design blog</a></li>
+            <li><a href="https://gds.blog.gov.uk/">GDS blog</a></li>
+            <li><a href="https://userresearch.blog.gov.uk/">User research</a></li>
+            <li><a href="https://accessibility.blog.gov.uk/">Accessibility</a></li>
+        </ul>
+        <ul>
+            <li><a href="https://designnotes.blog.gov.uk/2016/04/22/the-different-types-of-design-in-government/">The different types of design in government</a></li>
+            <li><a href="https://gds.blog.gov.uk/2016/04/18/what-we-mean-by-service-design/">What we mean by service design</a></li>
+            <li><a href="https://designnotes.blog.gov.uk/2015/07/03/one-thing-per-page/">One thing per page</a></li>
+            <li><a href="https://designnotes.blog.gov.uk/2015/09/08/graphic-design-for-government-services/">Graphic design for government services</a></li>
+        </ul>
+
+    </div>
+
+  
+
+        
+        {{ backLink({
+          "href": "/diat/home",
+          "text": "Back to Home",
+          "classes": "nhsuk-u-margin-top-7"
+        }) }}
+
+    </div>
+</div>
+
+    {% endblock %}
