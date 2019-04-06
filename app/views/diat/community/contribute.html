@@ -1,0 +1,80 @@
+{% extends 'layouts/layout-bsa-design-system.html' %}
+
+{% block pageTitle %}
+Start page template - NHS.UK prototype kit
+{% endblock %}
+
+{% block beforeContent %}
+
+{{ breadcrumb({
+  items: [
+    {
+      href: "/diat/design-system-home",
+      text: "Design System"
+    }
+  ],
+      href: "/diat/community/community",
+      text: "Community"
+}) }}
+
+
+{% endblock %}
+
+{% block content %}
+
+
+<div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-one-third">
+        <div class="article-section-nav-outer-wrapper">
+            <div id="sticky-nav" class="" style="">
+                <div class="inner-wrapper-sticky" style="position: relative; transform: translate3d(0px, 0px, 0px);">
+                    <div class="article-section-nav-wrapper">
+                        <div class="article-section-nav">
+                            <nav id="toc" class="js-toc-list toc__list">
+                                <ol class="article-section-nav__list">
+                                    <li>
+                                        <a href="backlog">Backlog</a>
+                                    </li>
+                                    <li>
+                                        <a href="contribute" class="active">Contribute</a>
+                                    </li>
+                                    <li>
+                                        <a href="using-patterns">Using the system</a>
+                                    </li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="nhsuk-grid-column-two-thirds">
+        <h1>Contribute</h1>
+
+        <p class="nhsuk-body-l">Anyone can propose a new component or pattern.</p>
+
+      <h2>1. Share the work</h2>
+      <p>Talk about the pattern or component to the community. Share your work, as other teams might be working on the same thing. Gather feedback and examples from the community.</p>
+
+      <h2>2. Check the backlog</h2>
+      <p>Check if the pattern or component is already on the <a href="#">backlog</a>. If it is, feel free to comment and post screenshots of your example. Tell the Design System team if you want to contribute to it.</p>
+<!--https://github.com/UKHomeOffice/design-system/projects/1-->
+      <h2>3. Raise a new issue</h2>
+      <p>If your idea is not on the backlog, <a href="#">raise an issue</a>. A member of the Design System team will get in touch to discuss your proposal.</p>
+      <p>When raising an issue, explain why you think it should be included in the design system. You can also include screenshots and research notes.</p>
+    </div>
+<!--<a href="https://github.com/UKHomeOffice/design-system/issues"-->
+<!--
+        /**
+         * sticky-sidebar - A JavaScript plugin for making smart and high performance.
+         * @version v3.3.1
+         * @link https://github.com/abouolia/sticky-sidebar
+         * @author Ahmed Bouhuolia
+         * @license The MIT License (MIT)
+         **/
+-->
+
+</div>
+{% endblock %}

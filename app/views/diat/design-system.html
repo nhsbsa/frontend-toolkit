@@ -1,0 +1,67 @@
+{% extends 'layouts/layout.html' %}
+
+{% block pageTitle %}
+About - NHS.UK prototype kit
+{% endblock %}
+
+{% block beforeContent %}
+
+{{ breadcrumb({
+  items: [
+    {
+      href: "/diat/home",
+      text: "Home"
+    },
+    {
+      href: "/diat/guidance",
+      text: "Guidance and tools"
+    }
+  ],
+      href: "/diat/design-system",
+      text: "Design system"
+}) }}
+
+{% endblock %}
+
+{% block content %}
+
+
+<div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-full">
+        <h1>NHSBSA design system</h1>
+    </div>
+</div>
+
+<div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+        <p class="nhsuk-body-l"> Patterns, components and styles to improve consistency across services and reduce duplication of work</p>
+
+        <p>Our system fills the gaps between the GOV.UK and NHS.UK design systems and NHSBSA services. </p>
+
+        {{ button({
+          "href": "design-system-home",
+          "text": "Design system"
+        }) }}
+
+        <div class="nhsuk-panel-with-label">
+            <h3 class="nhsuk-panel-with-label__label">Related content</h3>
+            <p>You may also find the following content useful:</p>
+
+            <ul>
+                <li><a href="https://beta.nhs.uk/service-manual/styles-components-patterns">NHS.UK UI styles, components and patterns</a></li>
+                <li><a href="https://design-system.service.gov.uk">GOV.UK Design system</a></li>
+            </ul>
+
+        </div>
+
+
+        {{ backLink({
+          "href": "diat/home",
+          "text": "Back to Home",
+          "classes": "nhsuk-u-margin-top-7"
+        }) }}
+
+
+    </div>
+
+    {% endblock %}

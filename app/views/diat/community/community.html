@@ -1,0 +1,78 @@
+{% extends 'layouts/layout-bsa-design-system.html' %}
+
+{% block pageTitle %}
+Start page template - NHS.UK prototype kit
+{% endblock %}
+
+{% block beforeContent %}
+
+{{ breadcrumb({
+  items: 
+    {
+      href: "/diat/design-system-home",
+      text: "Design System"
+    }
+  
+}) }}
+
+{% endblock %}
+
+{% block content %}
+
+
+<div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-one-third">
+        <div class="article-section-nav-outer-wrapper">
+            <div id="sticky-nav" class="" style="">
+                <div class="inner-wrapper-sticky" style="position: relative; transform: translate3d(0px, 0px, 0px);">
+                    <div class="article-section-nav-wrapper">
+                        <div class="article-section-nav">
+                            <nav id="toc" class="js-toc-list toc__list">
+                                <ol class="article-section-nav__list">
+                                    <li>
+                                        <a href="backlog">Backlog</a>
+                                    </li>
+                                    <li>
+                                        <a href="contribute">Contribute</a>
+                                    </li>
+                                    <li>
+                                        <a href="using-patterns">Using the system</a>
+                                    </li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="nhsuk-grid-column-two-thirds">
+        <h1>Community</h1>
+
+        <p class="nhsuk-body-l">This design system is for everyone. It's purpose is to extend the <a href="https://design-system.service.gov.uk/">GOV.UK Design System</a> with work specific to the NHS Business Services Authority.</p>
+        
+        <p>Patterns or components that have a wider use will be contributed to the GOV.UK Design System so they can be used by delivery teams across government.</p>
+
+        <p>Find out:</p>
+        <ul class="govuk-list govuk-list--bullet">
+            <li>what is currently being worked on in the <a href="/community/backlog">backlog</a></li>
+            <li>how to <a href="/community/propose">propose a component or pattern</a></li>
+            <li>about the <a href="/community/stages">stages of a pattern or component</a></li>
+            <li>how to <a href="/community/using">use the system</a></li>
+        </ul>
+
+    </div>
+
+    <!--
+        /**
+         * sticky-sidebar - A JavaScript plugin for making smart and high performance.
+         * @version v3.3.1
+         * @link https://github.com/abouolia/sticky-sidebar
+         * @author Ahmed Bouhuolia
+         * @license The MIT License (MIT)
+         **/
+-->
+
+</div>
+{% endblock %}

@@ -1,0 +1,111 @@
+{% extends 'layouts/layout-bsa-design-system.html' %}
+
+{% block pageTitle %}
+Start page template - NHS.UK prototype kit
+{% endblock %}
+
+{% block beforeContent %}
+<!--
+{{ breadcrumb({
+  items: [
+    {
+      href: "/diat/home",
+      text: "Home"
+    },
+    {
+      href: "/diat/guidance",
+      text: "Guidance and tools"
+    }
+  ],
+      href: "/diat/design-system",
+      text: "Design system"
+}) }}
+-->
+
+{% endblock %}
+
+
+
+
+{% block content %}
+<div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-full">
+        <h1>NHSBSA design system</h1>
+    </div>
+</div>
+
+<div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-one-third">
+        <div class="article-section-nav-outer-wrapper">
+            <div id="sticky-nav" class="" style="">
+                <div class="inner-wrapper-sticky" style="position: relative; transform: translate3d(0px, 0px, 0px);">
+                    <div class="article-section-nav-wrapper">
+                        <div class="article-section-nav">
+                            <nav id="toc" class="js-toc-list toc__list">
+                                <ol class="article-section-nav__list">
+                                    <li>
+                                        <a href="#summary" aria-label="Scroll to 'Summary'" title="Scroll to 'Summary'">Summary</a>
+                                    </li>
+                                    <li>
+                                        <a href="#about" class="active">About NHSmail</a>
+                                    </li>
+                                    <li>
+                                        <a href="#hsmail">Start using NHSmail</a>
+                                    </li>
+                                    <li>
+                                        <a href="#security">Security</a>
+                                    </li>
+                                    <li>
+                                        <a href="#guidance">Guidance for sending secure email (including to patients)</a>
+                                    </li>
+                                    <li>
+                                        <a href="#further-information">Further information</a>
+                                    </li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="nhsuk-grid-column-two-thirds">
+        <div id="about" class="article-section">
+            <h2>About NHSmail</h2>
+            <p>NHSmail is available for use by any organisation commissioned to deliver publicly funded health and social care.</p>
+        </div>
+
+        <div id="nhsmail" class="article-section">
+            <h2>Start using NHSmail</h2>
+            <p>NHSmail is available for use by any organisation commissioned to deliver publicly funded health and social care.</p>
+        </div>
+
+        <div id="security" class="article-section ">
+            <h2>Security</h2>
+            <p>NHSmail is available for use by any organisation commissioned to deliver publicly funded health and social care.</p>
+        </div>
+
+        <div id="guidance" class="article-section ">
+            <h2>Security</h2>
+            <p>NHSmail is available for use by any organisation commissioned to deliver publicly funded health and social care.</p>
+        </div>
+
+        <div class="article-section article-section--child-pages" id="further-information">
+            <h2>Further information</h2>
+
+        </div>
+    </div>
+
+    <!--
+        /**
+         * sticky-sidebar - A JavaScript plugin for making smart and high performance.
+         * @version v3.3.1
+         * @link https://github.com/abouolia/sticky-sidebar
+         * @author Ahmed Bouhuolia
+         * @license The MIT License (MIT)
+         **/
+-->
+
+</div>
+{% endblock %}
