@@ -1,0 +1,73 @@
+{% extends 'layouts/layout.html' %}
+
+{% block pageTitle %}
+About - NHS.UK prototype kit
+{% endblock %}
+
+{% block beforeContent %}
+
+{{ breadcrumb({
+  items: [
+    {
+      href: "/index",
+      text: "Home"
+    },
+    {
+      href: "/diat/guidance",
+      text: "Guidance and tools"
+    }
+  ],
+      href: "/diat/tech-stack",
+      text: "Tech-stack"
+}) }}
+
+{% endblock %}
+
+{% block content %}
+
+
+<div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-full">
+        <h1>Development best practice  </h1>
+    </div>
+</div>
+
+<div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+        <p class="nhsuk-body-l">Development best practice guidance, including technical service requirements, APIs, security, testing, licensing and branching.</p>
+        
+        <h2>Technical service requirements</h2>
+        <p>Services should be built to meet our <a href="https://github.com/UKHomeOffice/technical-service-requirements">technical service requirements</a>, and should also be built as <a href="https://12factor.net/">12 factor apps</a>.</p>
+        
+        <h2>APIs</h2>
+        <p><a href="https://github.com/UKHomeOffice/api-guide-for-developers">API best practice</a> should be followed.</p>
+        
+        <h2>Security</h2>
+        <p>Services must be <a href="https://github.com/UKHomeOffice/security-guide-for-developers/">secure by design</a>.</p>
+        
+        <h2>Testing</h2>
+        <p>Comprehensive <a href="https://github.com/UKHomeOffice/testing-guide-for-developers">automated tests</a> must exist.</p>
+        
+        <h2>Licensing</h2>
+        <p>Our default licence for open source projects is the <a href="https://opensource.org/licenses/MIT">MIT licence</a>.</p>
+        
+        <h2>Branching strategy</h2>
+        <p>You should:</p>
+        <ul>
+          <li>protect your master branch</li>
+          <li>not force push to master</li>
+          <li>require reviews on PRs before they can be merged</li>
+          <li>develop each story on a new branch</li>
+          <li>merge to master regularly to avoid merge hell</li>
+        </ul>
+
+        {{ backLink({
+          "href": "/docs",
+          "text": "Back to Home",
+          "classes": "nhsuk-u-margin-top-7"
+        }) }}
+
+
+</div>
+
+{% endblock %}

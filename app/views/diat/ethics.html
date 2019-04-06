@@ -1,0 +1,98 @@
+{% extends 'layouts/layout.html' %}
+
+{% block pageTitle %}
+About - NHS.UK prototype kit
+{% endblock %}
+
+{% block beforeContent %}
+
+{{ breadcrumb({
+  items: [
+    {
+      href: "/index",
+      text: "Home"
+    },
+    {
+      href: "/diat/guidance",
+      text: "Guidance and tools"
+    }
+  ],
+      href: "/diat/ethics",
+      text: "Ethics induction"
+}) }}
+{% endblock %}
+
+
+{% block content %}
+
+
+<div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-full">
+        <h1>Ethics induction </h1>
+    </div>
+</div>
+
+
+<div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-one-quarter">
+        <p class="nhsuk-body-s">Format: Workshop</p>
+    </div>
+    <div class="nhsuk-grid-column-one-quarter">
+        <p class="nhsuk-body-s">Length:1 day</p>
+    </div>
+</div>
+
+
+<div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-full">
+        <p class="nhsuk-body-l">Anyone involved in user research in Home Office Digital, Data and Technology (DDaT) must go on this ethics training.</p>
+    </div>
+</div>
+
+<div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-three-quarters">
+
+        <h2>What you’ll learn</h2>
+        <p>The session includes:</p>
+
+        <ul>
+            <li>the <a href="https://www.mrs.org.uk/standards/code_of_conduct">Market Research Society’s Code of Conduct</a>, and data protection laws and regulation</li>
+            <li>how we conduct research with various user groups</li>
+            <li>how we use data in research, including sharing, storing and handling user research data</li>
+            <li>ethical research</li>
+            <li>gaining voluntary informed consent</li>
+        </ul>
+
+        <h2>Who can attend</h2>
+
+        <p>This is a mandatory session for user researchers in Home Office Digital, Data and Technology (DDaT). It’s also open to other staff involved in research inside and outside of DIaT.</p>
+
+
+        <div class="nhsuk-panel-with-label">
+            <h3 class="nhsuk-panel-with-label__label">Related content</h3>
+            <p>You may also find the following content useful:</p>
+
+            <ul>
+                <li><a href="https://www.gov.uk/service-manual/user-research">user research on the GOV.UK Service Manual</a></li>
+                <li><a href="https://www.mrs.org.uk/">training and events at the Market Research Society</a></li>
+            </ul>
+
+        </div>
+
+        <hr>
+        <h2 class="heading-large">For more information</h2>
+        <p>Email <a href="mailto:#">#</a> for more information, to talk to a subject matter expert, or to book.</p>
+    </div>
+
+
+
+    <!--
+        {{ backLink({
+          "href": "/docs",
+          "text": "Back to Home",
+          "classes": "nhsuk-u-margin-top-7"
+        }) }}
+-->
+</div>
+
+{% endblock %}

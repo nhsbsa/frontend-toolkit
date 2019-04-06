@@ -1,0 +1,107 @@
+{% extends 'layouts/layout.html' %}
+
+{% block pageTitle %}
+About - NHS.UK prototype kit
+{% endblock %}
+
+{% block beforeContent %}
+
+{{ breadcrumb({
+  items: [
+    {
+      href: "/index",
+      text: "Home"
+    },
+    {
+      href: "/diat/guidance",
+      text: "Guidance and tools"
+    }
+  ],
+      href: "/diat/content-books",
+      text: "Recommended reading"
+}) }}
+{% endblock %}
+
+
+{% block content %}
+
+
+<div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-full">
+        <h1>Service Design Team recommended reading </h1>
+    </div>
+</div>
+
+<div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-full">
+        <p class="nhsuk-body-l">Specialist reading recommended by the Service Design community.</p>
+    </div>
+</div>
+
+<div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-three-quarters">
+
+        <h2>Design</h2>
+        <h3>Books</h3>
+
+        <ul>
+            <li>#</li>
+            <li>#</li>
+            <li>#</li>
+            <li>#</li>
+            <li>#</li>
+            <li>#</li>
+            <li>#</li>
+        </ul>
+
+
+    <div class="nhsuk-panel-with-label">
+        <h3 class="nhsuk-panel-with-label__label">Related content</h3>
+        <p>You may also find the following content useful:</p>
+
+        <ul>
+            <li><a href="#">#</a></li>
+            <li><a href="#">#</a></li>
+            <li><a href="#">#</a></li>
+        </ul>
+
+    </div>
+
+    <hr>
+        <h2>Content design</h2>
+        <h3>Books</h3>
+
+        <ul>
+            <li>The Elements of Content Strategy, by Erin Kissane</li>
+            <li>Plain Words, by Gowers and Fraser</li>
+            <li>Content Strategy for Web, by Kristina Halvorson</li>
+            <li>Letting Go of the Words, Writing Web Content that Works, by Janice Redish</li>
+            <li>The Elements of Style, by William Strunk and EB White</li>
+            <li>Eats, Shoots and Leaves, by Lynne Truss and Bonnie Timmons</li>
+            <li>Transform, by Gerry McGovern</li>
+        </ul>
+
+
+    <div class="nhsuk-panel-with-label">
+        <h3 class="nhsuk-panel-with-label__label">Related content</h3>
+        <p>You may also find the following content useful:</p>
+
+        <ul>
+            <li><a href="http://www.plainenglish.co.uk/the-a-z-of-alternative-words.html">The A-Z of alternative plain English words</a></li>
+            <li><a href="https://digitaltransformation.blog.gov.uk/2014/08/14/9-content-tips-to-help-you-build-a-better-digital-service/">9 content tips to help you build a better digital service</a></li>
+            <li><a href="http://languagelog.ldc.upenn.edu/nll/">The Language Log</a></li>
+        </ul>
+
+    </div>
+
+        
+        {{ backLink({
+          "href": "/docs",
+          "text": "Back to Home",
+          "classes": "nhsuk-u-margin-top-7"
+        }) }}
+
+    </div>
+</div>
+
+    {% endblock %}

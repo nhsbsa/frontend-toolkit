@@ -1,0 +1,49 @@
+{% extends 'layouts/layout.html' %}
+
+{% block beforeContent %}
+  {{ hero({
+    "heading": "NHS.UK prototype kit",
+    "text": "Rapidly create HTML prototypes of NHS.UK services."
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-full">
+
+      <div class="nhsuk-grid-row nhsuk-promo-group">
+        <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+          {{ promo({
+            "href": "https://www.gov.uk/service-toolkit",
+            "heading": "GOV.UK Service Toolkit",
+            "headingLevel": 2,
+            "description": "The government standards your team needs to work to, and the guidance and tools to support them."
+          }) }}
+        </div>
+        <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+          {{ promo({
+            "href": "assessment",
+            "heading": "Assessments at the NHS Business Services Authority",
+            "headingLevel": 2,
+            "description": "All services need an assessment, includes training and consultancy to help your team prepare."
+          }) }}
+        </div>
+        <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+          {{ promo({
+            "href": "guidance",
+            "heading": "Guidance and tools",
+            "headingLevel": 2,
+            "description": "The things you need to build and run your service, includes the design system."
+          }) }}
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="nhsuk-u-reading-width">
+        <p class="nhsuk-u-margin-bottom-0">Visit the <a href="https://beta.nhs.uk/service-manual/">NHS digital service manual</a> for guidance and examples.</p>
+      </div>
+
+    </div>
+  </div>
+{% endblock %}
