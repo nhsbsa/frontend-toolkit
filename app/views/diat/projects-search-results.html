@@ -1,0 +1,105 @@
+{% extends 'layouts/layout.html' %}
+
+{% block pageTitle %}
+About - NHS.UK prototype kit
+{% endblock %}
+
+{% block beforeContent %}
+{{ breadcrumb({
+  items: [
+    {
+      href: "/diat/home",
+      text: "Home"
+    }
+  ],
+      href: "/diat/guidance",
+      text: "Guidance and tools"
+}) }}
+
+
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-full">
+        <h1>NHSBSA Digital projects</h1>
+    </div>
+</div>
+
+<!--Search-->
+<div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-one-third">
+
+        <form method="GET">
+            <h1 class="nhsuk-heading-m">Search projects</h1>
+
+            <div class="nhsuk-form-group ">
+                <label class="nhsuk-label nhsuk-date-input__label">Keywords</label>
+                <input class="nhsuk-input" id="keywords" name="keywords" type="text">
+            </div>
+
+
+            <div class="nhsuk-form-group ">
+                <label class="nhsuk-label nhsuk-date-input__label">Phase</label>
+                <select class="nhsuk-select" id="phase" name="phase">
+                    <option selected="selected" value="__None">--</option>
+                    <option value="1">Alpha</option>
+                    <option value="2">Beta</option>
+                    <option value="3">Discovery</option>
+                    <option value="4">Live</option>
+                </select>
+            </div>
+
+            <button class="nhsuk-button" type="submit" name="search" value="true">Search</button>
+        </form>
+    </div>
+
+    <div class="nhsuk-grid-column-two-thirds">
+        <h2 class="nhsuk-heading-m"><span class="nhsuk-heading-xl" style="display: inline">2</span> projects</h2>
+        <hr>
+        <ul class="nhsuk-list">
+
+            <li>
+                <h2 class="search__search-result-item-title">
+                    <a href="lis">Low Income Scheme</a>
+                        <span class="label--blue">Beta</span>
+                </h2>
+                <p>Service goal</p>
+                <p>July 2018 - present</p>
+                <p>Part of: <a href="#">Help with health costs</a></p>
+
+                <hr>
+                
+            </li>
+            
+            <li>
+                <h2 class="search__search-result-item-title">
+                    <a href="#">Maternity Exemption</a>
+                        <span class="label--blue">Beta</span>
+                </h2>
+                <p>Service goal</p>
+                <p>July 2018 - present</p>
+                <p>Part of: <a href="#">Help with health costs</a></p>
+
+                <hr>
+                
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+</div>
+
+
+{{ backLink({
+          "href": "/diat/home",
+          "text": "Back to Home",
+          "classes": "nhsuk-u-margin-top-7"
+        }) }}
+
+
+</div>
+
+
+{% endblock %}
