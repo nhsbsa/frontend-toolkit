@@ -1,0 +1,125 @@
+{% extends 'layouts/layout-bsa-design-system.html' %}
+
+{% set active = "patterns" %}
+{% set activesub = "check" %}
+
+{% block pageTitle %}
+Check and confirm - NHSBSA design system
+{% endblock %}
+
+{% block content %}
+
+
+<div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-one-third">
+        <div class="article-section-nav-outer-wrapper">
+            <div id="sticky-nav" class="" style="">
+                <div class="inner-wrapper-sticky" style="position: relative; transform: translate3d(0px, 0px, 0px);">
+                    <div class="article-section-nav-wrapper">
+                        <div class="article-section-nav">
+                            <nav id="toc" class="js-toc-list toc__list">
+                                <ol class="article-section-nav__list">
+                                    <li>
+                                        <a href="confirmation-loop">Check and confirm</a>
+                                    </li>
+                                    <li>
+                                        <a href="help">Contextual help</a>
+                                    </li>
+                                    <li>
+                                        <a href="enquiry">Enquiry form</a>
+                                    </li>
+                                    <li>
+                                        <a href="error-pages">Error Page</a>
+                                    </li>
+                                    <li>
+                                        <a href="sign-out">Leaving a service</a>
+                                    </li>
+                                    <li>
+                                        <a href="guidance-image">Guidance images</a>
+                                    </li>
+                                    <li>
+                                        <a href="identifying-users">Authentication of users</a>
+                                    </li>
+                                    <li>
+                                        <a href="interruption-card">Interruption card</a>
+                                    </li>
+                                    <li>
+                                        <a href="modal">Modal window</a>
+                                    </li>
+                                    <li>
+                                        <a href="multiple-loops">Multiple loops</a>
+                                    </li>
+                                    <li>
+                                        <a href="postcode">Postcode lookup</a>
+                                    </li>
+                                    <li>
+                                        <a href="question-funnel">Question funnel</a>
+                                    </li>
+                                    <li>
+                                        <a href="upload-file">Upload a document</a>
+                                    </li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="nhsuk-grid-column-two-thirds">
+     
+      <span class="nhsuk-caption-xl">Patterns</span>
+      <h1 class="heading-section">Enquiry form</h1>
+      <p class="nhsuk-body-l">Allow users to submit an enquiry to a service.</p>
+
+      <div class="example example-images confirmation details-margin-btm">
+        <form>
+          <div class="form-group">
+            <label class="nhsuk-heading-m" for="textarea">
+              Your enquiry
+            </label>
+            <textarea class="nhsuk-textarea nhsuk-input--width-30" id="more-detail" style="margin-top:20px;" name="more-detail" rows="4" aria-describedby="more-detail-hint"></textarea>
+          </div>
+          <div class="form-group">
+            <h3 class="nhsuk-heading-m" style="margin-bottom:20px;margin-top:1em;">Your details so we can contact you</h3>
+            <div class="nhsuk-form-group">
+              <label class="nhsuk-label" for="width-20">Full name</label>
+              <input class="nhsuk-input nhsuk-!-width-two-thirds" id="width-20" name="width-20" type="text">
+            </div>
+            <div class="nhsuk-form-group">
+              <label class="nhsuk-label" for="width-20">Email address</label>
+              <input class="nhsuk-input nhsuk-!-width-two-thirds" id="width-20" name="width-20" type="text">
+            </div>
+          </div>
+          <div class="nhsuk-grid-row">
+            <div class="nhsuk-grid-column-two-thirds">
+              <p>The information you give will be emailed to our customer resolution team. Your data will be deleted once the case is resolved.</p>
+            </div>
+          </div>
+          <button class="nhsuk-button" type="submit">Submit</button>
+
+        </form>
+      </div>
+
+      <h2 class="nhsuk-heading-m">When to use this pattern</h2>
+      <p>Enquiry forms should always be available to a user.</p>
+      <p>If a user submits an application, include a link to the enquiry form in follow-up communications.</p>
+
+      <h2 class="nhsuk-heading-m">Guidance</h2>
+      <h3 class="nhsuk-heading-s">It can be used:</h3>
+      <ul class="nhsuk-list nhsuk-list--bullet">
+        <li>with a variety of enquiry and support types</li>
+        <li>with optional contact details</li>
+      </ul>
+      <h3 class="nhsuk-heading-s">It can include:</h3>
+      <ul class="nhsuk-list nhsuk-list--bullet">
+        <li>information on how the service will store and use the information users give</li>
+        <li>a list of options for the subject of the enquiry</li>
+      </ul>
+
+    </div>
+</div>
+
+
+{% endblock %}

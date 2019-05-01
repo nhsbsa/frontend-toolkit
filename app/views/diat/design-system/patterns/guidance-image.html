@@ -1,0 +1,115 @@
+{% extends 'layouts/layout-bsa-design-system.html' %}
+
+{% set active = "patterns" %}
+{% set activesub = "guide-image" %}
+
+{% block pageTitle %}
+Guidance page - NHSBSA design system
+{% endblock %}
+
+{% block content %}
+
+
+<div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-one-third">
+        <div class="article-section-nav-outer-wrapper">
+            <div id="sticky-nav" class="" style="">
+                <div class="inner-wrapper-sticky" style="position: relative; transform: translate3d(0px, 0px, 0px);">
+                    <div class="article-section-nav-wrapper">
+                        <div class="article-section-nav">
+                            <nav id="toc" class="js-toc-list toc__list">
+                                <ol class="article-section-nav__list">
+                                    <li>
+                                        <a href="confirmation-loop">Check and confirm</a>
+                                    </li>
+                                    <li>
+                                        <a href="help">Contextual help</a>
+                                    </li>
+                                    <li>
+                                        <a href="enquiry">Enquiry form</a>
+                                    </li>
+                                    <li>
+                                        <a href="error-pages">Error Page</a>
+                                    </li>
+                                    <li>
+                                        <a href="sign-out">Leaving a service</a>
+                                    </li>
+                                    <li>
+                                        <a href="guidance-image">Guidance images</a>
+                                    </li>
+                                    <li>
+                                        <a href="identifying-users">Authentication of users</a>
+                                    </li>
+                                    <li>
+                                        <a href="interruption-card">Interruption card</a>
+                                    </li>
+                                    <li>
+                                        <a href="modal">Modal window</a>
+                                    </li>
+                                    <li>
+                                        <a href="multiple-loops">Multiple loops</a>
+                                    </li>
+                                    <li>
+                                        <a href="postcode">Postcode lookup</a>
+                                    </li>
+                                    <li>
+                                        <a href="question-funnel">Question funnel</a>
+                                    </li>
+                                    <li>
+                                        <a href="upload-file">Upload a document</a>
+                                    </li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     
+         <div class="nhsuk-grid-column-two-thirds">
+         
+      <span class="nhsuk-caption-xl">Patterns</span>
+      <h1 class="heading-section">Guidance images</h1>
+      <p class="nhsuk-body-l">Using images can help explain content to users.</p>
+
+      <h2 id="interaction" class="nhsuk-heading-m" style="margin-top:0.5em;">When to use this pattern</h2>
+      <p>Only use <a href="https://design-system.service.gov.uk/styles/images/">images</a> when research identifies a user need. Used correctly, images can help users to understand:</p>
+      <ul class="nhsuk-list nhsuk-list--bullet">
+        <li>a new or unfamiliar concept</li>
+        <li>complex guidance when completing a task</li>
+        <li>how to find a reference number on a document</li>
+      </ul>
+
+      <h2 id="examples" class="nhsuk-heading-m">Examples</h2>
+      <div class="example example-images confirmation" style="margin-bottom: 2em;">
+        <img src="/images/image-guidance-passport.svg" class="confirm-desktop" alt="An example of a guidance image used on a service, with text on the left and an illustrative image on the right">
+        <img src="{{ asset_path }}/images/image-guidance-passport.svg" class="confirmation confirm-mobile" alt="An example of a guidance image used on a service, with text on the left and an illustrative image on the right">
+      </div>
+
+      <div class="example example-images confirmation" style="margin-bottom: 2em;">
+        <img src="/images/image-guidance-url.svg" class="confirm-desktop" alt="Another example of a guidance image used on a service, with text on the left and an illustrative image on the right">
+        <img src="{{ asset_path }}/images/image-guidance-url.svg" class="confirmation confirm-mobile" alt="Another example of a guidance image used on a service, with text on the left and an illustrative image on the right">
+      </div>
+
+      <h2 id="related" class="nhsuk-heading-m">Services using this pattern</h2>
+      <ul class="nhsuk-list nhsuk-list--bullet">
+        <li><a href="https://www.gov.uk/apply-renew-passport">Passport renewals</a></li>
+        <li>Right to work</li>
+        <li>Registered Traveller</li>
+      </ul>
+
+      <h2 id="related" class="nhsuk-heading-m">Related</h2>
+      <ul class="nhsuk-list nhsuk-list--bullet">
+        <li><a href="https://home-office-digital-patterns.herokuapp.com/patterns/interruption-card">Interruption card</a></li>
+        <li><a href="https://design-system.service.gov.uk/styles/images/">GOV.UK Design System images guidance</a></li>
+      </ul>
+
+
+    </div>
+
+  </main>
+</div>
+
+
+{% endblock %}

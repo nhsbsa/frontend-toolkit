@@ -1,0 +1,106 @@
+{% extends 'layouts/layout-bsa-design-system.html' %}
+{% set active = "patterns" %}
+{% set activesub = "postcode" %}
+
+{% block pageTitle %}
+Postcode lookup - NHSBSA design system
+{% endblock %}
+
+{% block content %}
+
+<div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-one-third">
+        <div class="article-section-nav-outer-wrapper">
+            <div id="sticky-nav" class="" style="">
+                <div class="inner-wrapper-sticky" style="position: relative; transform: translate3d(0px, 0px, 0px);">
+                    <div class="article-section-nav-wrapper">
+                        <div class="article-section-nav">
+                            <nav id="toc" class="js-toc-list toc__list">
+                                <ol class="article-section-nav__list">
+                                    <li>
+                                        <a href="confirmation-loop">Check and confirm</a>
+                                    </li>
+                                    <li>
+                                        <a href="help">Contextual help</a>
+                                    </li>
+                                    <li>
+                                        <a href="enquiry">Enquiry form</a>
+                                    </li>
+                                    <li>
+                                        <a href="error-pages">Error Page</a>
+                                    </li>
+                                    <li>
+                                        <a href="sign-out">Leaving a service</a>
+                                    </li>
+                                    <li>
+                                        <a href="guidance-image">Guidance images</a>
+                                    </li>
+                                    <li>
+                                        <a href="identifying-users">Authentication of users</a>
+                                    </li>
+                                    <li>
+                                        <a href="interruption-card">Interruption card</a>
+                                    </li>
+                                    <li>
+                                        <a href="modal">Modal window</a>
+                                    </li>
+                                    <li>
+                                        <a href="multiple-loops">Multiple loops</a>
+                                    </li>
+                                    <li>
+                                        <a href="postcode">Postcode lookup</a>
+                                    </li>
+                                    <li>
+                                        <a href="question-funnel">Question funnel</a>
+                                    </li>
+                                    <li>
+                                        <a href="upload-file">Upload a document</a>
+                                    </li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="nhsuk-grid-column-two-thirds">
+      <span class="nhsuk-caption-xl">Patterns</span>
+      <h1 class="heading-section">Postcode lookup</h1>
+      <p class="nhsuk-body-l">Allow users to find an address using a postcode lookup.</p>
+
+      <div class="example example-images confirmation" style="margin-bottom: 2em;">
+        <img src="{{ asset_path }}/images/postcode-lookup.svg" class="confirm-desktop" alt="A diagram of a postcode lookup. The first page gives the user an input for their postcode. There are three possible results. The user finds their address, the user inputs their address manually or the postcode shows no results so they input their address manually.">
+        <img src="{{ asset_path }}/images/postcode-lookup-mobile.svg" class="confirmation confirm-mobile" alt="A diagram of a postcode lookup. The first page gives the user an input for their postcode. There are three possible results. The user finds their address, the user inputs their address manually or the postcode shows no results so they input their address manually.">
+      </div>
+
+      <h2 class="nhsuk-heading-m">Guidance</h2>
+      <h3 class="nhsuk-heading-s">It can be used:</h3>
+      <ul class="nhsuk-list nhsuk-list--bullet">
+        <li>to find a single address</li>
+        <li>to add an address manually</li>
+        <li>as part of a loop to add multiple addresses</li>
+      </ul>
+
+      <h3 class="nhsuk-heading-s">It should not be used:</h3>
+      <ul class="nhsuk-list nhsuk-list--bullet">
+        <li>if the address is needed as structured data</li>
+      </ul>
+
+      <h3 class="nhsuk-heading-s">The postcode lookup pattern should:</h3>
+      <ul class="nhsuk-list nhsuk-list--bullet">
+        <li>replay the address options clearly</li>
+        <li>give the user flexibility to add an address in different ways</li>
+      </ul>
+
+      <h2 class="nhsuk-heading-m">User research</h2>
+      <ul class="list">
+        <li>Users living in new-build accomodation who knew their address wouldn't be found had no problem with free text input.</li>
+      </ul>
+
+    </div>
+  </main>
+</div>
+
+{% endblock %}

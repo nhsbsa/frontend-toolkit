@@ -1,0 +1,127 @@
+{% extends 'layouts/layout-bsa-design-system.html' %}
+{% set active = "patterns" %}
+{% set activesub = "interruption" %}
+
+{% block pageTitle %}
+Interruption card - NHSBSA design system
+{% endblock %}
+
+{% block content %}
+
+<div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-one-third">
+        <div class="article-section-nav-outer-wrapper">
+            <div id="sticky-nav" class="" style="">
+                <div class="inner-wrapper-sticky" style="position: relative; transform: translate3d(0px, 0px, 0px);">
+                    <div class="article-section-nav-wrapper">
+                        <div class="article-section-nav">
+                            <nav id="toc" class="js-toc-list toc__list">
+                                <ol class="article-section-nav__list">
+                                    <li>
+                                        <a href="confirmation-loop">Check and confirm</a>
+                                    </li>
+                                    <li>
+                                        <a href="help">Contextual help</a>
+                                    </li>
+                                    <li>
+                                        <a href="enquiry">Enquiry form</a>
+                                    </li>
+                                    <li>
+                                        <a href="error-pages">Error Page</a>
+                                    </li>
+                                    <li>
+                                        <a href="sign-out">Leaving a service</a>
+                                    </li>
+                                    <li>
+                                        <a href="guidance-image">Guidance images</a>
+                                    </li>
+                                    <li>
+                                        <a href="identifying-users">Authentication of users</a>
+                                    </li>
+                                    <li>
+                                        <a href="interruption-card">Interruption card</a>
+                                    </li>
+                                    <li>
+                                        <a href="modal">Modal window</a>
+                                    </li>
+                                    <li>
+                                        <a href="multiple-loops">Multiple loops</a>
+                                    </li>
+                                    <li>
+                                        <a href="postcode">Postcode lookup</a>
+                                    </li>
+                                    <li>
+                                        <a href="question-funnel">Question funnel</a>
+                                    </li>
+                                    <li>
+                                        <a href="upload-file">Upload a document</a>
+                                    </li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="nhsuk-grid-column-two-thirds">
+      <span class="nhsuk-caption-xl">Patterns</span>
+      <h1 class="heading-section">Interruption card</h1>
+      <p class="nhsuk-body-l">An alert that interrupts the user flow with important information and must be acknowledged before continuing.</p>
+
+      <div class="example example-images" id="example-component">
+        <div class="nhsuk-grid-row">
+          {% include "includes/patterns/flash_card.html" %}
+        </div>
+      </div>
+      <details class="code-details">
+        <summary>HTML</summary>
+        <pre><code class="html">{% filter escape %}{% include "includes/patterns/flash_card.html" %}{% endfilter %}</code></pre>
+      </details>
+      <details class="code-details details-margin-btm">
+        <summary>CSS</summary>
+        <pre><code class="css">{% filter escape %}{% include "includes/css/interruption.scss" %}{% endfilter %}</code></pre>
+      </details>
+
+      <h2 class="nhsuk-heading-m">Guidance</h2>
+      <h3 class="nhsuk-heading-s">It can be used:</h3>
+      <ul class="nhsuk-list nhsuk-list--bullet">
+        <li>to draw a users attention to important information specific to that point in their journey</li>
+        <li>allow users to acknowledge something before continuing</li>
+        <li>if important information is styled normally and users are missing it use this pattern - its unexpected so helps to bring attention to essential information</li>
+      </ul>
+
+      <h3 class="nhsuk-heading-s">It should not be used:</h3>
+
+      <ul class="nhsuk-list nhsuk-list--bullet">
+        <li>for large amounts of content</li>
+        <li>the effectiveness of the pattern is based on its unexpected appearance so should be used sparingly</li>
+      </ul>
+
+      <h3 class="nhsuk-heading-s">The interuption should:</h3>
+      <ul class="nhsuk-list nhsuk-list--bullet">
+        <li>include a heading</li>
+        <li>have large body text - a minimum of 24px</li>
+        <li>use a &ldquo;Continue&rdquo; button to advance to the next card or page</li>
+        <li>have one thing per card - if the user needs to do more than one thing, use extra cards</li>
+      </ul>
+
+      <h2 class="nhsuk-heading-m">User research</h2>
+      <p>This pattern has been so successful on the passport renewals service that we have been able to dramatically reduce the amount of content on the start page.</p>
+      <p>Interrupting users&rsquo; flow in this way can increase their understanding and retention of important information.</p>
+      <p>We have seen evidence that the contrast levels of interuption cards help dyslexic users.</p>
+      <p><a href="https://designnotes.blog.gov.uk/2015/09/21/helping-users-understand-gov-uk-verify-designing-with-data/">Read a blog post about the patterns use on Verify</a></p>
+
+      <h2 class="nhsuk-heading-m">Services using this pattern</h2>
+      <ul class="nhsuk-list nhsuk-list--bullet">
+        <li><a href="https://www.gov.uk/apply-renew-passport">Passport renewals</a></li>
+        <li>Verify (GOV.UK)</li>
+      </ul>
+
+
+    </div>
+  </main>
+</div>
+
+{% endblock %}

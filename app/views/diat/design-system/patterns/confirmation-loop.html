@@ -1,0 +1,124 @@
+{% extends 'layouts/layout-bsa-design-system.html' %}
+
+{% set active = "patterns" %}
+{% set activesub = "check" %}
+
+{% block pageTitle %}
+Check and confirm - NHSBSA design system
+{% endblock %}
+
+{% block content %}
+
+
+<div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-one-third">
+        <div class="article-section-nav-outer-wrapper">
+            <div id="sticky-nav" class="" style="">
+                <div class="inner-wrapper-sticky" style="position: relative; transform: translate3d(0px, 0px, 0px);">
+                    <div class="article-section-nav-wrapper">
+                        <div class="article-section-nav">
+                            <nav id="toc" class="js-toc-list toc__list">
+                                <ol class="article-section-nav__list">
+                                    <li>
+                                        <a href="confirmation-loop">Check and confirm</a>
+                                    </li>
+                                    <li>
+                                        <a href="help">Contextual help</a>
+                                    </li>
+                                    <li>
+                                        <a href="enquiry">Enquiry form</a>
+                                    </li>
+                                    <li>
+                                        <a href="error-pages">Error Page</a>
+                                    </li>
+                                    <li>
+                                        <a href="sign-out">Leaving a service</a>
+                                    </li>
+                                    <li>
+                                        <a href="guidance-image">Guidance images</a>
+                                    </li>
+                                    <li>
+                                        <a href="identifying-users">Authentication of users</a>
+                                    </li>
+                                    <li>
+                                        <a href="interruption-card">Interruption card</a>
+                                    </li>
+                                    <li>
+                                        <a href="modal">Modal window</a>
+                                    </li>
+                                    <li>
+                                        <a href="multiple-loops">Multiple loops</a>
+                                    </li>
+                                    <li>
+                                        <a href="postcode">Postcode lookup</a>
+                                    </li>
+                                    <li>
+                                        <a href="question-funnel">Question funnel</a>
+                                    </li>
+                                    <li>
+                                        <a href="upload-file">Upload a document</a>
+                                    </li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <span class="nhsuk-caption-xl">Patterns</span>
+      <h1 class="heading-section">Check and confirm</h1>
+      <p class="nhsuk-body-l">An interaction that allows a user to check some information and to either submit it (if correct) or change it (if incorrect).</p>
+
+<div class="example example-images confirmation">
+        <img src="/images/confirmation-desktop.svg" class="confirm-desktop" alt="A diagram of the confirmation pattern showing three steps. Step 1 shows an input field. Step 2 shows a confirmation box with the user's input, a button to confirm and a link to cancel. Step 3 shows confirmation the interaction is complete.">
+        
+        <img src="/images/confirmation-mobile.svg" class="confirmation confirm-mobile" alt="A diagram of the confirmation pattern showing three steps. Step 1 shows an input field. Step 2 shows a confirmation box with the user's input, a button to confirm and a link to cancel. Step 3 shows confirmation the interaction is complete.">
+      </div>
+
+      <h2 class="nhsuk-heading-m">When to use this pattern</h2>
+      <p>A confirmation gives users an opportunity to check information before completing an action, and to correct it if necessary.</p>
+      <p>Confirmation may be needed where the action is final and a mistake is not easy to correct.</p>
+
+      <h2 class="nhsuk-heading-m">Guidance</h2>
+      <h3 class="nhsuk-heading-s">It can be used:</h3>
+      <ul class="nhsuk-list nhsuk-list--bullet">
+        <li>to confirm a single input or action</li>
+        <li>when the action is not easily reversible</li>
+        <li>when the completion immediately starts another process</li>
+      </ul>
+
+      <h3 class="nhsuk-heading-s">It should not be used:</h3>
+
+      <ul class="nhsuk-list nhsuk-list--bullet">
+        <li>to agree to terms and conditions</li>
+        <li>if the user can easily change their action or input later</li>
+      </ul>
+
+      <h3 class="nhsuk-heading-s">The confirmation should:</h3>
+      <ul class="nhsuk-list nhsuk-list--bullet">
+        <li>be meaningful</li>
+        <li>use the same language as the requested action</li>
+        <li>allow the user to cancel the action and change the input</li>
+      </ul>
+
+      <h2 class="nhsuk-heading-m">Interactions using this pattern</h2>
+      <ul class="nhsuk-list nhsuk-list--bullet">
+        <li>Entering a recipient&rsquo;s email address</li>
+      </ul>
+
+      <div class="contact-us">
+        <h2 class="nhsuk-heading-m">Get in touch</h2>
+        <p>If you’ve got a question or suggestion share it on Slack <a href="slack://channel?id=C0FR8PE8Z&team=T03TJ3P61">#interaction-designers channel</a> or on <a href="https://github.com/UKHomeOffice/home-office-digital-patterns/issues/58">GitHub</a>.</p>
+      </div>
+
+    </div>
+  </main>
+</div>
+
+
+{% endblock %}

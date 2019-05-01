@@ -1,0 +1,118 @@
+{% extends 'layouts/layout-bsa-design-system.html' %}
+
+{% set active = "patterns" %}
+{% set activesub = "loops" %}
+
+{% block pageTitle %}
+Multiple loops - NHSBSA design system
+{% endblock %}
+
+{% block content %}
+
+<div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-one-third">
+        <div class="article-section-nav-outer-wrapper">
+            <div id="sticky-nav" class="" style="">
+                <div class="inner-wrapper-sticky" style="position: relative; transform: translate3d(0px, 0px, 0px);">
+                    <div class="article-section-nav-wrapper">
+                        <div class="article-section-nav">
+                            <nav id="toc" class="js-toc-list toc__list">
+                                <ol class="article-section-nav__list">
+                                    <li>
+                                        <a href="confirmation-loop">Check and confirm</a>
+                                    </li>
+                                    <li>
+                                        <a href="help">Contextual help</a>
+                                    </li>
+                                    <li>
+                                        <a href="enquiry">Enquiry form</a>
+                                    </li>
+                                    <li>
+                                        <a href="error-pages">Error Page</a>
+                                    </li>
+                                    <li>
+                                        <a href="sign-out">Leaving a service</a>
+                                    </li>
+                                    <li>
+                                        <a href="guidance-image">Guidance images</a>
+                                    </li>
+                                    <li>
+                                        <a href="identifying-users">Authentication of users</a>
+                                    </li>
+                                    <li>
+                                        <a href="interruption-card">Interruption card</a>
+                                    </li>
+                                    <li>
+                                        <a href="modal">Modal window</a>
+                                    </li>
+                                    <li>
+                                        <a href="multiple-loops">Multiple loops</a>
+                                    </li>
+                                    <li>
+                                        <a href="postcode">Postcode lookup</a>
+                                    </li>
+                                    <li>
+                                        <a href="question-funnel">Question funnel</a>
+                                    </li>
+                                    <li>
+                                        <a href="upload-file">Upload a document</a>
+                                    </li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="nhsuk-grid-column-two-thirds">
+      <span class="nhsuk-caption-xl">Patterns</span>
+      <h1 class="heading-section">Multiple loops</h1>
+      <p class="nhsuk-body-l">An interaction that allows a user to add multiple items, check and add more if needed.</p>
+
+      <div class="example example-images confirmation">
+        <img src="{{ asset_path }}/images/multiple-loops.svg" class="confirm-desktop" alt="An example of a multiple loop flow, adding multiple addresses. The flow is 3 screens. Screen 1 is the user entering their postcode. The second screen lets the user pick the right address. The final screen plays back the address and has an option to add another address.">
+        <img src="{{ asset_path }}/images/multiple-loops-mobile.svg" class="confirmation confirm-mobile" alt="An example of a multiple loop flow, adding multiple addresses. The flow is 3 screens. Screen 1 is the user entering their postcode. The second screen lets the user pick the right address. The final screen plays back the address and has an option to add another address.">
+      </div>
+
+      <h2 class="nhsuk-heading-m">When to use this pattern</h2>
+      <p>This interaction allows a user to add single or multiple items, check they are correct and an option to add more.</p>
+      <p>This pattern can be used to add people to an application, add items to a list or uploading files.</p>
+
+      <h2 class="nhsuk-heading-m">Guidance</h2>
+      <h3 class="nhsuk-heading-s">It can be used:</h3>
+      <ul class="nhsuk-list nhsuk-list--bullet">
+        <li>to help confirm an action</li>
+        <li>to allow the user to change their minds</li>
+        <li>when the action is not easily reversible</li>
+        <li>when the completion immediately starts another process</li>
+      </ul>
+
+      <h3 class="nhsuk-heading-s">Multiple loops should:</h3>
+      <ul class="nhsuk-list nhsuk-list--bullet">
+        <li>remember previous choices</li>
+        <li>give clear guidance on the flexibility of choices</li>
+      </ul>
+
+      <h2 class="nhsuk-heading-m">Interactions using this pattern</h2>
+      <ul class="nhsuk-list nhsuk-list--bullet">
+        <li>Entering a recipient&rsquo;s email address</li>
+        <li>Uploading multiple files</li>
+        <li>Adding multiple postal addresses</li>
+      </ul>
+
+      <h2 class="nhsuk-heading-m">Related patterns</h2>
+      <ul class="nhsuk-list nhsuk-list--bullet">
+        <li><a href="upload-file">Add a file</a></li>
+      </ul>
+
+      <div class="contact-us">
+        <h2 class="nhsuk-heading-m">Get in touch</h2>
+        <p>If you’ve got a question or suggestion share it on Slack <a href="slack://channel?id=C0FR8PE8Z&team=T03TJ3P61">#interaction-designers channel</a> or on <a href="https://github.com/UKHomeOffice/home-office-digital-patterns/issues/36">GitHub</a>.</p>
+      </div>
+
+    </div>
+  </main>
+</div>
+
+{% endblock %}

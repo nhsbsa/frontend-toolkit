@@ -1,0 +1,117 @@
+{% extends 'layouts/layout-bsa-design-system.html' %}
+
+{% set active = "patterns" %}
+{% set activesub = "leave" %}
+
+{% block pageTitle %}
+Leaving a service - NHSBSA design system
+{% endblock %}
+
+{% block content %}
+
+<div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-one-third">
+        <div class="article-section-nav-outer-wrapper">
+            <div id="sticky-nav" class="" style="">
+                <div class="inner-wrapper-sticky" style="position: relative; transform: translate3d(0px, 0px, 0px);">
+                    <div class="article-section-nav-wrapper">
+                        <div class="article-section-nav">
+                            <nav id="toc" class="js-toc-list toc__list">
+                                <ol class="article-section-nav__list">
+                                    <li>
+                                        <a href="confirmation-loop">Check and confirm</a>
+                                    </li>
+                                    <li>
+                                        <a href="help">Contextual help</a>
+                                    </li>
+                                    <li>
+                                        <a href="enquiry">Enquiry form</a>
+                                    </li>
+                                    <li>
+                                        <a href="error-pages">Error Page</a>
+                                    </li>
+                                    <li>
+                                        <a href="sign-out">Leaving a service</a>
+                                    </li>
+                                    <li>
+                                        <a href="guidance-image">Guidance images</a>
+                                    </li>
+                                    <li>
+                                        <a href="identifying-users">Authentication of users</a>
+                                    </li>
+                                    <li>
+                                        <a href="interruption-card">Interruption card</a>
+                                    </li>
+                                    <li>
+                                        <a href="modal">Modal window</a>
+                                    </li>
+                                    <li>
+                                        <a href="multiple-loops">Multiple loops</a>
+                                    </li>
+                                    <li>
+                                        <a href="postcode">Postcode lookup</a>
+                                    </li>
+                                    s<li>
+                                        <a href="question-funnel">Question funnel</a>
+                                    </li>
+                                    <li>
+                                        <a href="upload-file">Upload a document</a>
+                                    </li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="nhsuk-grid-column-two-thirds">
+      <span class="nhsuk-caption-xl">Patterns</span>
+      <h1 class="heading-section">Leaving a service (sign out)</h1>
+      <p class="nhsuk-body-l">Allow users to leave a service at the right time.</p>
+
+      <h2 class="nhsuk-heading-m" style="margin-top: 0.5em;">How to use these patterns</h2>
+      <p>Do research to understand at what point in a service a user will need to leave.</p>
+      <p>For public-facing services it may be better to describe it as leaving a service rather then signing out. Users might not feel they have signed in to a service.</p>
+      <p>Only give users the option to leave mid-service if they can save progress and carry on with the service at another time.</p>
+      <p>Consider the environment users will use your service.</p>
+
+      <h2 class="nhsuk-heading-m">In page</h2>
+      <h3 class="nhsuk-heading-s">When to use this pattern</h3>
+      <p>When a user comes to a certain point in your service and the most important action is to leave. This can still be used with a persistent link elsewhere.</p>
+      <p>At the end of a service.</p>
+      <p>When a user is likely to be working from a public space and is inputting sensitive data.</p>
+      <img src="{{ asset_path }}/images/signout-inpage.svg" class="confirm-desktop confirm-mobile" style="margin-bottom:3em;" alt="An example service page with a sign-out link in the main body of the page underneath a confirmation message. The sign out link is a button with the text 'Finish and leave service'.">
+
+      <h2 class="nhsuk-heading-m">Under header</h2>
+      <h3 class="nhsuk-heading-s">When to use this pattern</h3>
+      <p>When signing out of a service is best practice but not crucial for the user.</p>
+      <img src="{{ asset_path }}/images/signout-underheader.svg" class="confirm-desktop confirm-mobile" style="margin-bottom:3em;" alt="An example service page with a sign-out link under the header on the right of a feedback link.">
+
+      <h2 class="nhsuk-heading-m">In header</h2>
+      <h3 class="nhsuk-heading-s">When to use this pattern</h3>
+      <p>When signing out of a service isn’t important but users might want to - for example they share a workspace.</p>
+      <p>This pattern is more likely to be used on multi-use and caseworking services.</p>
+      <img src="{{ asset_path }}/images/signout-inheader.svg" class="confirm-desktop" style="margin-bottom:3em;" alt="An example service page with a sign-out link in the header on the right of GOV.UK and the crown.">
+
+      <h2 class="nhsuk-heading-m">After leaving the service</h2>
+      <p>Take users to a confirmation page that includes:</p>
+      <ul class="nhsuk-list nhsuk-list--bullet">
+        <li>a confirmation that the sign out has been successful</li>
+        <li>gives them the option to sign back in again</li>
+      </ul>
+
+      <h2 class="nhsuk-heading-m">User research</h2>
+      <p>Users are confident in using a 'leave the service' button at the end of a transaction. Users mention they want to make sure they leave a service securely.</p>
+
+      <h2 class="nhsuk-heading-m">Related patterns</h2>
+      <ul class="nhsuk-list nhsuk-list--bullet">
+        <li><a href="/styles/header">Service header</a></li>
+      </ul>
+
+    </div>
+  </main>
+</div>
+
+{% endblock %}

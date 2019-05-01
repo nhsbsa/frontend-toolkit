@@ -8,25 +8,53 @@
 ///////////////////////////////////////////
 // Add your custom CSS/Sass styles below... 
 ///////////////////////////////////////////
+.example {
+    position: relative;
+    overflow: hidden;
+    // background-color: #fff;
+    border: 1px solid $color_nhsuk-grey-3;
+    margin-top: 30px;
+    padding: 40px 30px 30px 30px;
+	&:before {
+	    content: "EXAMPLE";
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    padding: 0.2105263158em 0.7894736842em 0.2105263158em 0.7894736842em;
+      -webkit-font-smoothing: antialiased;
+	    font-weight: 400;
+	    text-transform: none;
+	    font-size: 12px;
+	    font-weight: bold;
+	    line-height: 1.45;
+	    background: #425563;
+        color: white;
+	}
+}
 
-//.toc__list a:link:hover, .toc__list a:visited:hover {
-//        border-left: 7px solid #ffb81c;
-//        padding-left: 10px;
-//        color: #425563;
-//        text-decoration: none;
-//        font-weight: bold;
-//    background-color: none;
-//    box-shadow: none;
-//    
-//    .toc__list a:link:active {
-//        border-left: 7px solid #ffb81c;
-//        padding-left: 10px;
-//        color: #425563;
-//        text-decoration: none;
-//        font-weight: bold;
-//
-//}
+confirmation {
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+.confirm-desktop{
+  display: block;
+}
 
+.confirm-mobile{
+   display: none;
+}
+
+@media screen and ( max-width: 640px ) {
+   .confirm-desktop{
+     display: none;
+   }
+
+   .confirm-mobile{
+     display: block;
+   }
+}
 
     /* Sticky nav */
     #sticky-nav a.active {
@@ -385,3 +413,112 @@
   }
 }
 
+.confirmation {
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+.confirm-desktop{
+  display: block;
+}
+
+.confirm-mobile{
+   display: none;
+}
+
+@media screen and ( max-width: 640px ) {
+   .confirm-desktop{
+     display: none;
+   }
+
+   .confirm-mobile{
+     display: block;
+   }
+}
+
+.flash-card {
+  margin-top: 1em;
+  padding: 30px;
+  background: #005EA5;
+  color: #FFF;
+
+  header {
+    background-color: inherit;
+  }
+
+  p {
+    margin-left: 32px;
+  }
+
+  ul.how-to-renew {
+    padding-left: 0;
+    list-style: none;
+
+    h2 {
+      margin: 0;
+      margin-bottom: 0;
+      padding: 0;
+      color: #FFF;
+      font-size: 28px;
+    }
+
+    li {
+      margin-bottom: 22px;
+    }
+  }
+
+  h1 {
+    color: #FFF;
+    &:first-of-type {
+      margin-top: 0 !important;
+    }
+  }
+
+  a {
+    color: #FFF;
+    &:visited, &:hover, &:active {
+      color: #FFF; }
+    }
+    details {
+      // margin-bottom: 1em;
+      summary {
+        color: #FFF;
+      }
+      .panel {
+        border-left-color: #FFF;
+      }
+    }
+  }
+
+  @media (min-width: 769px) {
+    .flash-card {
+      margin-top: 1.25em;
+      padding: 35px 50px;
+    }
+  }
+
+.circle-white {
+  color: #005ea5;
+  background: #fff;
+  float: left;
+  margin-right: 15px;
+}
+
+.circle-step {
+  min-width: 24px;
+  min-height: 24px;
+  line-height: 24px;
+}
+
+.circle {
+  margin-top: 6px;
+  display: inline-block;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  font-family: 'Inter UI', sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+}

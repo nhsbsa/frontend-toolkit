@@ -1,0 +1,112 @@
+{% extends 'layouts/layout-bsa-design-system.html' %}
+{% set active = "patterns" %}
+{% set activesub = "upload" %}
+
+{% block pageTitle %}
+Add a file - NHSBSA design system
+{% endblock %}
+
+{% block content %}
+
+
+<div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-one-third">
+        <div class="article-section-nav-outer-wrapper">
+            <div id="sticky-nav" class="" style="">
+                <div class="inner-wrapper-sticky" style="position: relative; transform: translate3d(0px, 0px, 0px);">
+                    <div class="article-section-nav-wrapper">
+                        <div class="article-section-nav">
+                            <nav id="toc" class="js-toc-list toc__list">
+                                <ol class="article-section-nav__list">
+                                    <li>
+                                        <a href="confirmation-loop">Check and confirm</a>
+                                    </li>
+                                    <li>
+                                        <a href="help">Contextual help</a>
+                                    </li>
+                                    <li>
+                                        <a href="enquiry">Enquiry form</a>
+                                    </li>
+                                    <li>
+                                        <a href="error-pages">Error Page</a>
+                                    </li>
+                                    <li>
+                                        <a href="sign-out">Leaving a service</a>
+                                    </li>
+                                    <li>
+                                        <a href="guidance-image">Guidance images</a>
+                                    </li>
+                                    <li>
+                                        <a href="identifying-users">Authentication of users</a>
+                                    </li>
+                                    <li>
+                                        <a href="interruption-card">Interruption card</a>
+                                    </li>
+                                    <li>
+                                        <a href="modal">Modal window</a>
+                                    </li>
+                                    <li>
+                                        <a href="multiple-loops">Multiple loops</a>
+                                    </li>
+                                    <li>
+                                        <a href="postcode">Postcode lookup</a>
+                                    </li>
+                                    <li>
+                                        <a href="question-funnel">Question funnel</a>
+                                    </li>
+                                    <li>
+                                        <a href="upload-file">Upload a document</a>
+                                    </li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="nhsuk-grid-column-two-thirds">
+        <span class="nhsuk-caption-xl">Patterns</span>
+        <h1 class="heading-section">Add a file</h1>
+        <p class="nhsuk-body-l">An interaction that allows a user to add (upload) one or more files.</p>
+
+        <h2 class="nhsuk-heading-m" id="example-component">Add a single file</h2>
+        <div class="example example-images confirmation" style="margin-bottom: 2em;">
+            <img src="/images/single-upload.svg" class=" confirm-desktop" alt="The flow a user would take to upload a file. Step 1 shows a user choosing to either upload or skip. Step 2 shows the native file browser. Step 3 shows the user being played back the file and the decision whether to continue or choose a different file.">
+            <img src="/images/single-upload-mobile.svg" class="confirmation confirm-mobile" alt="The flow a user would take to upload a file. Step 1 shows a user choosing to either upload or skip. Step 2 shows the native file browser. Step 3 shows the user being played back the file and the decision whether to continue or choose a different file.">
+        </div>
+
+        <h2 class="nhsuk-heading-m" id="example-component">Add multiple files</h2>
+        <div class="example example-images confirmation">
+            <img src="/images/multi-upload.svg" class=" confirm-desktop" alt="The flow a user would take to upload multiple files. Step 1 shows a user choosing to either upload or skip. Step 2 shows the native file browser. Step 3 shows the user being played back the file and the decision whether to continue or choose a different file. Step 4 gives the user a choice to continue or add more files.">
+            <img src="images/multi-upload-mobile.svg" class="confirmation confirm-mobile" alt="The flow a user would take to upload multiple files. Step 1 shows a user choosing to either upload or skip. Step 2 shows the native file browser. Step 3 shows the user being played back the file and the decision whether to continue or choose a different file. Step 4 gives the user a choice to continue or add more files.">
+        </div>
+
+        <h2 class="nhsuk-heading-m">Guidance</h2>
+        <h3 class="nhsuk-heading-s">It can be used:</h3>
+        <ul class="nhsuk-list nhsuk-list--bullet">
+            <li>to add single files</li>
+            <li>to add multiple files</li>
+            <li>for a range of file types</li>
+        </ul>
+
+        <h3 class="nhsuk-heading-s">It should not be used:</h3>
+
+        <ul class="nhsuk-list nhsuk-list--bullet">
+            <li>in some internal services where there is a need for bulk uploading</li>
+        </ul>
+
+        <h3 class="nhsuk-heading-s">The Add file pattern should:</h3>
+        <ul class="nhsuk-list nhsuk-list--bullet">
+            <li>replay the file details clearly to reduce user error</li>
+            <li>show the progress of an upload so users know that something is happening</li>
+            <li>allow the user to skip the process if it is optional</li>
+        </ul>
+
+
+    </div>
+    </main>
+</div>
+
+{% endblock %}

@@ -1,0 +1,110 @@
+{% extends 'layouts/layout-bsa-design-system.html' %}
+{% set active = "patterns" %}
+{% set activesub = "help" %}
+
+{% block pageTitle %}
+Contextual help - Home Office design system
+{% endblock %}
+
+{% block content %}
+
+<div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-one-third">
+        <div class="article-section-nav-outer-wrapper">
+            <div id="sticky-nav" class="" style="">
+                <div class="inner-wrapper-sticky" style="position: relative; transform: translate3d(0px, 0px, 0px);">
+                    <div class="article-section-nav-wrapper">
+                        <div class="article-section-nav">
+                            <nav id="toc" class="js-toc-list toc__list">
+                                <ol class="article-section-nav__list">
+                                    <li>
+                                        <a href="confirmation-loop">Check and confirm</a>
+                                    </li>
+                                    <li>
+                                        <a href="help">Contextual help</a>
+                                    </li>
+                                    <li>
+                                        <a href="enquiry">Enquiry form</a>
+                                    </li>
+                                    <li>
+                                        <a href="error-pages">Error Page</a>
+                                    </li>
+                                    <li>
+                                        <a href="sign-out">Leaving a service</a>
+                                    </li>
+                                    <li>
+                                        <a href="guidance-image">Guidance images</a>
+                                    </li>
+                                    <li>
+                                        <a href="identifying-users">Authentication of users</a>
+                                    </li>
+                                    <li>
+                                        <a href="interruption-card">Interruption card</a>
+                                    </li>
+                                    <li>
+                                        <a href="modal">Modal window</a>
+                                    </li>
+                                    <li>
+                                        <a href="multiple-loops">Multiple loops</a>
+                                    </li>
+                                    <li>
+                                        <a href="postcode">Postcode lookup</a>
+                                    </li>
+                                    <li>
+                                        <a href="question-funnel">Question funnel</a>
+                                    </li>
+                                    <li>
+                                        <a href="upload-file">Upload a document</a>
+                                    </li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     
+         <div class="nhsuk-grid-column-two-thirds">
+         
+      <span class="nhsuk-caption-xl">Patterns</span>
+      <h1 class="heading-section">Contextual help</h1>
+      <p class="nhsuk-body-l">Small overlays containing help content for complex interactions.</p>
+
+      <h2 class="nhsuk-heading-m">When to use help</h2>
+      <p>Only use help to explain things like business processes. It shouldn't be relied upon to solve design problems - services should always be simple and intuitive (<a href="https://www.gov.uk/service-manual/service-standard/create-a-service-thats-simple">service stand point 12</a>). Contextual help is more suited to complex internal services. </p>
+
+      <div class="example example-images confirmation">
+        <h2 class="nhsuk-visually-hidden" id="example-component">An example of authentication</h2>
+        <img src="/images/help.svg" class="confirm-desktop" alt="The first page is a search page on GOV.UK. It shows a search heading and information followed by a search input and button. The second page is the same but has an overlay help box with answers to common questions and a link to full help.">
+        <img src="/images/help-mobile.svg" class="confirmation confirm-mobile" alt="The first page is a search page on GOV.UK. It shows a search heading and information followed by a search input and button. The second page is the same but has an overlay help box with answers to common questions and a link to full help.">
+      </div>
+
+      <h2 class="nhsuk-heading-m">How to use help</h2>
+      <p>Help should be easy to close, move and minimise until the user needs it.</p>
+      <p>If contextual help doesn&rsquo;t answer a user&rsquo;s question, links to more comprehensive help should be easy to find.</p>
+      <p><a href="https://www.gov.uk/service-manual/design/help-text">GDS has guidance for help content</a>.
+
+      <h2 class="nhsuk-heading-m">User research</h2>
+      <p>Users find side-by-side guidance more helpful and easier to use.</p>
+      <p>Small overlay windows offer the smallest interference with the users flow.</p>
+      <p>This is a <a href="https://www.nngroup.com/articles/pop-up-adaptive-help/">good article on contextual help</a> from Nielsen Norman.</p>
+
+      <h2 class="nhsuk-heading-m">Services using this pattern</h2>
+      <ul class="nhsuk-list nhsuk-list--bullet">
+        <li>Application platform</li>
+        <li>Entities</li>
+      </ul>
+
+      <h2 class="nhsuk-heading-m">Related patterns</h2>
+      <ul class="nhsuk-list nhsuk-list--bullet">
+        <li><a href="/patterns/modal.html">Modal windows</a></li>
+      </ul>
+
+
+    </div>
+
+  </main>
+</div>
+
+{% endblock %}
