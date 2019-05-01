@@ -1,0 +1,64 @@
+{% extends 'layouts/layout.html' %}
+
+{% block pageTitle %}
+About - NHS.UK prototype kit
+{% endblock %}
+
+{% block beforeContent %}
+
+{{ breadcrumb({
+  items: [
+    {
+      href: "/diat/home",
+      text: "Home"
+    },
+    {
+      href: "/diat/guidance",
+      text: "Guidance and tools"
+    }
+  ],
+      href: "/diat/manage-submissions",
+      text: "Manage your submissions"
+}) }}
+{% endblock %}
+
+
+{% block content %}
+
+
+<div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-full">
+        <h1>Manage your Submissions</h1>
+    </div>
+</div>
+
+
+<!-- <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-one-quarter">
+        <p class="nhsuk-body-s">Format: Workshop</p>
+    </div>
+    <div class="nhsuk-grid-column-one-quarter">
+        <p class="nhsuk-body-s">Length: 1 day</p>
+    </div>
+</div> -->
+
+
+<div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-three-quarters">
+        <h2 class="search__search-result-item-title">
+        <a href="#">User research findings</a>
+                   
+    </h2>
+
+
+        {{ backLink({
+          "href": "/diat/home",
+          "text": "Back to Home",
+          "classes": "nhsuk-u-margin-top-7"
+        }) }}
+        
+    </div>
+
+</div>
+
+{% endblock %}

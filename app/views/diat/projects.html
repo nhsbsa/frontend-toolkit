@@ -30,18 +30,18 @@ About - NHS.UK prototype kit
 <div class="nhsuk-grid-row">
     <div class="nhsuk-grid-column-one-third">
 
-        <form method="GET">
+        <form method="GET" >
             <h1 class="nhsuk-heading-m">Search projects</h1>
 
             <div class="nhsuk-form-group ">
                 <label class="nhsuk-label nhsuk-date-input__label">Keywords</label>
-                <input class="nhsuk-input" id="keywords" name="keywords" type="text">
+                <input class="nhsuk-input" id="keywords" name="keywords" type="search" onkeyup="searchProjects()">
             </div>
 
 
             <div class="nhsuk-form-group ">
                 <label class="nhsuk-label nhsuk-date-input__label">Phase</label>
-                <select class="nhsuk-select" id="phase" name="phase">
+                <select class="nhsuk-select" id="phase" name="phase" onclick="selectPhase()">
                     <option selected="selected" value="__None">--</option>
                     <option value="1">Alpha</option>
                     <option value="2">Beta</option>
@@ -57,13 +57,14 @@ About - NHS.UK prototype kit
     <div class="nhsuk-grid-column-two-thirds">
         <h2 class="nhsuk-heading-l"> Projects</h2>
         <hr>
-        <ul class="nhsuk-list">
+        <ul id="service-list" class="nhsuk-list">
 
             <li>
                 <h2 class="search__search-result-item-title">
                     <a href="lis">Low Income Scheme</a>
                 </h2>
                 <p>Service goal</p>
+                <p class="phase-status">Live</p>
 
                 <hr>
                 
@@ -71,19 +72,20 @@ About - NHS.UK prototype kit
             
             <li>
                 <h2 class="search__search-result-item-title">
-                    <a href="#">Maternity Exemption</a>
+                    <a href="matex">Maternity Exemption</a>
                 </h2>
                 <p>Service goal</p>
-
+                <p class="phase-status">Beta</p>
                 <hr>
                 
             </li>
             
             <li>
                 <h2 class="search__search-result-item-title">
-                    <a href="#">Manage your Submissions</a>
+                    <a href="manage-submissions">Manage your Submissions</a>
                 </h2>
                 <p>Service goal</p>
+                <p class="phase-status">Alpha</p>
 
                 <hr>
                 
@@ -104,6 +106,26 @@ About - NHS.UK prototype kit
 
 
 </div>
+<script>
+function searchProjects() {
+  var input, filter, ul, li, a, i, txtValue;
+  input = document.getElementById('keywords');
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("service-list");
+  li = ul.getElementsByTagName('li');
 
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    txtValue = a.textContent || a.innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+
+
+</script>
 
 {% endblock %}
