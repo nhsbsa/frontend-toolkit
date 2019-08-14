@@ -1,0 +1,52 @@
+{% extends 'layouts/layout-bsa-design-system.html' %}
+{% set active = "components" %}
+{% set activesub = "alerts" %}
+
+{% block pageTitle %}
+Alerts - NHSBSA design system
+{% endblock %}
+
+{% block content %}
+
+<div class="nhsuk-grid-row">
+    {% include "includes/left-pane__components.html" %}
+   
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <span class="nhsuk-caption-xl">Components</span>
+      <h1 class="heading-section">Alerts</h1>
+      <p class="nhsuk-body-l">Alert users to important information.</p>
+      
+
+      <h2 class="nhsuk-visually-hidden" id="example-component">Example checkbox component</h2>
+      <div class="example example-images">
+        <div class="nhsuk-grid-row">
+          {% include "includes/components/alerts.html" %}
+        </div>
+      </div>
+
+
+      <h2 class="nhsuk-heading-m">When to use this component</h2>
+      <p>Use alerts to inform users that something important has happened. Either an action they need to take or to notify them of a success/failure.</p>
+
+      <h2 class="nhsuk-heading-m">When not to use this component</h2>
+      <p>Only use when you have identified that users need alerting to certain content.</p>
+
+      <h2 class="nhsuk-heading-m">User research</h2>
+      <p>Passport renewals found this component worked better then the confirmation pattern for a payment success page. They observed users engaged with the next steps on the page, rather than thinking they were finished.</p>
+
+      <h2 class="nhsuk-heading-m">Services using this pattern</h2>
+      <ul class="nhsuk-list nhsuk-list--bullet">
+        <li>Passport renewals</li>
+
+      </ul>
+
+      <div class="contact-us">
+        <h2 class="nhsuk-heading-m">Get in touch</h2>
+        <p>If you’ve got a question or suggestion share it on Slack <a href="slack://channel?id=C0FR8PE8Z&team=T03TJ3P61">#interaction-designers channel</a> or on <a href="https://github.com/UKHomeOffice/home-office-digital-patterns/issues/102">GitHub</a>.</p>
+      </div>
+
+    </div>
+</div>
+
+{% endblock %}
