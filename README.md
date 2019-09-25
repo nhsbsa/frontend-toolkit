@@ -10,4 +10,4 @@ You can contribute by discussing and proposing components and patterns.
 Read our [contribution guidelines](https://github.com/nhsbsa/design-system/blob/master/CONTRIBUTING.md) and then check the [community backlog](https://github.com/nhsbsa/design-system/projects/1) to see what's needed.
 
 ## Credit
-This system has been built using the Home Office Design System https://github.com/UKHomeOffice/design-system
+This system has been built using the NHS Digital Service Manual https://beta.nhs.uk/service-manual/
